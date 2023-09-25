@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Розклад занять</title>
+  <style>
+  body {
+    background-color: #FAF2D3;
+  }
+      .column {
+          float: left;
+          width: 40%;
+      }
+      .column1 {
+          float: left;
+          width: 20%;
+      }
+      .clear {
+          clear: both;
+      }
+    form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #3085C3;
+    border: 2px solid #5CD2E6;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #5CD2E6;
+    border-radius: 3px;
+}
+
+form input[type="submit"] {
+    background-color: #5CD2E6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+      table {
+          width: 100%;
+          border-collapse: collapse;
+          font-size: 16px; /* Збільшимо розмір шрифту */
+      }
+
+      th, td {
+          border: 2px solid #5CD2E6;
+          padding: 10px;
+          text-align: center;
+      }
+
+      th{
+          background-color: #F4E869; /* Ваш бажаний колір */
+      }
+  </style>
+</head>
+<body>
+    <div class="column1">
+        <img src="https://kpi.ua/images/iszzi.png" alt="Логотип">
+    </div>
+    <div class="column">
+    <table border="1" align="center">
+        <tr>
+            <th>Понеділок</th>
+            <th>Вівторок</th>
+            <th>Середа</th>
+            <th>Четвер</th>
+            <th>П'ятниця</th>
+            <th>Субота</th>
+        </tr>
+        <tr>
+            <td>ФВ(парк)</td>
+            <td>Іноземна мова</td>
+            <td>ЗВП</td>
+            <td>ФВ(парк)</td>
+            <td>ФВ(парк)</td>
+            <td>СР</td>
+        </tr>
+        <tr>
+            <td>ЗВП</td>
+            <td>Право</td>
+            <td>ЗВП</td>
+            <td>Право</td>
+            <td>ТІМ</td>
+            <td>СР</td>
+        </tr>
+        <tr>
+            <td>ТС</td>
+            <td>ТІК</td>
+            <td>Програмування</td>
+            <td>ТС</td>
+            <td>ТІМ</td>
+            <td>СР</td>
+        </tr>
+        <tr>
+            <td>СР</td>
+            <td>СР</td>
+            <td>СР</td>
+            <td>Програмування</td>
+            <td>СР</td>
+            <td></td>
+        </tr>
+    </table>
+    </div>
+    <div class="column">
+        <form action="/submit.php" method="post">
+            <label for="first_name">Ім'я:</label>
+            <input type="text" id="first_name" name="first_name" required>
+            <label for="last_name">Прізвище:</label>
+            <input type="text" id="last_name" name="last_name" required>
+            <label for="email">Адреса електронної пошти:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="confirm_password">Підтвердіть пароль:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+            <input type="submit" value="Зареєструватися">
+        </form>
+    </div>
+    <div class="clear"></div>
+</body>
+</html>
